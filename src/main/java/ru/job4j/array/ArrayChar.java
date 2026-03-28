@@ -8,7 +8,7 @@ public class ArrayChar {
                 return false;
             }
         }
-        return result;
+        return true;
     }
 }
 
