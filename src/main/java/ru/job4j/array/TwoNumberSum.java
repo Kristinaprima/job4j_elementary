@@ -5,9 +5,10 @@ public class TwoNumberSum {
         int left = 0;
         int right = array.length - 1;
         while (left < right) {
-            if (array[left] + array[right] == target) {
-                return new int[]{array[left], array[right]};
-            } else if (array[left] + array[right] < target) {
+            int sum = array[left] + array[right];
+            if (sum == target) {
+                return new int[]{left, right};
+            } else if (sum < target) {
                 left++;
             } else {
                 right--;
